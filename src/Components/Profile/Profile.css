@@ -1,0 +1,34 @@
+.fi
+{
+    background-image: url('./2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.se{
+    box-shadow: 0 0 20px rgb(3, 52, 19);
+    background: transparent;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    width: 400px;
+    height: 520px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 20%;
+    left: 10%;
+    border: 2px solid rgb(229, 237, 229);
+    padding: 70px;
+    border-radius: 20px;
+    color:rgb(16, 16, 16);
+    
+}

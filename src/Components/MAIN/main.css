@@ -1,0 +1,111 @@
+.In{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background:seagreen; */ 
+     background: url("https://rare-gallery.com/mocahbig/26098-MountainColorful-Mountains.png") no-repeat;
+    /* background: aliceblue; */
+    background-position: center;
+    
+}
+@keyframes orbit {
+    0% {
+        transform: rotate(0deg) translateX(300px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(300px) rotate(-360deg);
+    }
+}
+a{
+    text-decoration: none;
+  
+}
+.likebody {
+    /* background-color: black; */
+    /* background-image: url("./back.png"); */
+    /* background: no-repeat; */
+    /* background-image: url('./back2.jpg'); */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px; /* Add perspective for 3D effect */
+}
+
+.center-element {
+    width: 200px;
+    height: 200px;
+    /* background-color: blueviolet; */
+    background: transparent;
+    backdrop-filter: blur(20px);
+    border-radius: 50%;
+    position: absolute;
+    animation: orbit 10s linear infinite;
+    cursor: pointer;
+    /* cursor: zoom-in; */
+     /* Change cursor to pointer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 0 10px grey; /* Border color and thickness */
+    /* text-decoration: none; */
+}
+
+
+.center-element:hover {
+    animation-play-state: paused; /* Pause the animation on hover */
+    box-shadow: 0 0 0 10px red;
+    background-color: black;
+    /* border-radius: 20%; */
+    text-decoration: none;
+    /* color: black; */
+}
+a{
+    /* background-color: black; */
+    color: red;
+      cursor: pointer; 
+      
+
+}
+a:hover{
+    font-size: 250%;
+    /* color: black; */
+    /* cursor: pointer; */
+    
+}
+
+.center-element button {
+    background: none;
+    color: black;
+    border: none;
+    /* color: white; */
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center; /* Center the text horizontally */
+    line-height: 200px; /* Center the text vertically */
+}
+
+.center-element:nth-child(1) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the element */
+    animation-delay: 0s;
+}
+
+.center-element:nth-child(2) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the element */
+    animation-delay: 2s;
+}
+
+.center-element:nth-child(3) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the element */
+    animation-delay: 4s;
+}
